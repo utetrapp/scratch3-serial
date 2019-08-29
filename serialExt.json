@@ -1,0 +1,113 @@
+{
+  "collapsed": true,
+  "extID": "serialExt",
+  "extName": "Serial Communication",
+  "color1Pick": false,
+  "color2Pick": false,
+  "color1": "#1367c9",
+  "color2": "#f8b405",
+  "indexJS": null,
+  "menuIcon": null,
+  "blockIcon": null,
+  "editBlockID": "isConnected",
+  "blocks": [
+    {
+      "opcode": "connect",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"191.6328125\" height=\"56\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%22r2S%3BrfbSk%2F%2CyIEI%24%25r%2FC%22%20class%3D%22blocklyDraggable%22%20data-shapes%3D%22stack%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C4%20A%204%2C4%200%200%2C1%204%2C0%20H%2012%20c%202%2C0%203%2C1%204%2C2%20l%204%2C4%20c%201%2C1%202%2C2%204%2C2%20h%2012%20c%202%2C0%203%2C-1%204%2C-2%20l%204%2C-4%20c%201%2C-1%202%2C-2%204%2C-2%20H%20187.63333320617676%20a%204%2C4%200%200%2C1%204%2C4%20v%2040%20%20a%204%2C4%200%200%2C1%20-4%2C4%20H%2048%20%20%20c%20-2%2C0%20-3%2C1%20-4%2C2%20l%20-4%2C4%20c%20-1%2C1%20-2%2C2%20-4%2C2%20h%20-12%20c%20-2%2C0%20-3%2C-1%20-4%2C-2%20l%20-4%2C-4%20c%20-1%2C-1%20-2%2C-2%20-4%2C-2%20H%204%20a%204%2C4%200%200%2C1%20-4%2C-4%20z%22%2F%3E%3Cg%20data-id%3D%220FxS%5Dx00qNeBMcKzM69-%22%20data-argument-type%3D%22text%22%20data-shapes%3D%22argument%20round%22%20transform%3D%22translate(134.04999923706055%2C8)%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2016%2C0%20H%2033.58333396911621%20a%2016%2016%200%200%201%200%2032%20H%2016%20a%2016%2016%200%200%201%200%20-32%20z%22%2F%3E%3Cg%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(8%2C%200)%20%22%3E%3Ctext%20class%3D%22blocklyText%22%20x%3D%2216.791666984558105%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Eport%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(48%2C%208)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2278.04999923706055%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%2239.02499961853027%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Econnect%3C%2Ftext%3E%3C%2Fg%3E%3Cpath%20class%3D%22blocklyPath%22%20style%3D%22visibility%3A%20hidden%22%20d%3D%22%22%20fill%3D%22%23FF3355%22%2F%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "connect %1",
+      "args": [
+        {
+          "argType": "STRING",
+          "placeholder": "port",
+          "shadowType": "text",
+          "fieldType": "TEXT",
+          "json": {
+            "type": "input_value",
+            "name": "port"
+          }
+        }
+      ],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"connect %s\" argumentids=\"[&quot;lmi5M5nUmC@YIb${1SfZ&quot;]\" argumentnames=\"[&quot;port&quot;]\" argumentdefaults=\"[&quot;&quot;]\" warp=\"false\"></mutation></xml>",
+      "type": "func",
+      "script": "connect (args, util){\n  const port = args.port;\n\n  return this.write(`M0 \\n`);\n}\n"
+    },
+    {
+      "opcode": "send",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"207.6328125\" height=\"56\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%22%3FjgTETI%7D*%3AS3!%40%23O~vAZ%22%20class%3D%22blocklyDraggable%20blocklySelected%22%20data-shapes%3D%22stack%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C4%20A%204%2C4%200%200%2C1%204%2C0%20H%2012%20c%202%2C0%203%2C1%204%2C2%20l%204%2C4%20c%201%2C1%202%2C2%204%2C2%20h%2012%20c%202%2C0%203%2C-1%204%2C-2%20l%204%2C-4%20c%201%2C-1%202%2C-2%204%2C-2%20H%20203.6333351135254%20a%204%2C4%200%200%2C1%204%2C4%20v%2040%20%20a%204%2C4%200%200%2C1%20-4%2C4%20H%2048%20%20%20c%20-2%2C0%20-3%2C1%20-4%2C2%20l%20-4%2C4%20c%20-1%2C1%20-2%2C2%20-4%2C2%20h%20-12%20c%20-2%2C0%20-3%2C-1%20-4%2C-2%20l%20-4%2C-4%20c%20-1%2C-1%20-2%2C-2%20-4%2C-2%20H%204%20a%204%2C4%200%200%2C1%20-4%2C-4%20z%22%2F%3E%3Cg%20data-id%3D%22!c1%2CQ%2B2iPPUw1Y6%5DTz%60g%22%20data-argument-type%3D%22text%22%20data-shapes%3D%22argument%20round%22%20transform%3D%22translate(112.70000076293945%2C8)%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2016%2C0%20H%2070.93333435058594%20a%2016%2016%200%200%201%200%2032%20H%2016%20a%2016%2016%200%200%201%200%20-32%20z%22%2F%3E%3Cg%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(8%2C%200)%20%22%3E%3Ctext%20class%3D%22blocklyText%22%20x%3D%2235.46666717529297%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Emessage%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(48%2C%208)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2256.70000076293945%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%2228.350000381469727%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Esend%3C%2Ftext%3E%3C%2Fg%3E%3Cpath%20class%3D%22blocklyPath%22%20style%3D%22visibility%3A%20hidden%22%20d%3D%22%22%20fill%3D%22%23FF3355%22%2F%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "send %1",
+      "args": [
+        {
+          "argType": "STRING",
+          "placeholder": "message",
+          "shadowType": "text",
+          "fieldType": "TEXT",
+          "json": {
+            "type": "input_value",
+            "name": "message"
+          }
+        }
+      ],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"send %s\" argumentids=\"[&quot;M;)n3-dZYTfZvx{$}@aq&quot;]\" argumentnames=\"[&quot;message&quot;]\" argumentdefaults=\"[&quot;&quot;]\" warp=\"false\"></mutation></xml>",
+      "type": "func"
+    },
+    {
+      "opcode": "onSerialAvailable",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"238.1328125\" height=\"72.5\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%22%603uWL6LDL%2CVu%2FGiHEywF%22%20class%3D%22blocklyDraggable%20blocklySelected%22%20data-shapes%3D%22hat%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20c%2025%2C-22%2071%2C-22%2096%2C0%20H%20234.13333129882812%20a%204%2C4%200%200%2C1%204%2C4%20v%2040%20%20a%204%2C4%200%200%2C1%20-4%2C4%20H%2048%20%20%20c%20-2%2C0%20-3%2C1%20-4%2C2%20l%20-4%2C4%20c%20-1%2C1%20-2%2C2%20-4%2C2%20h%20-12%20c%20-2%2C0%20-3%2C-1%20-4%2C-2%20l%20-4%2C-4%20c%20-1%2C-1%20-2%2C-2%20-4%2C-2%20H%204%20a%204%2C4%200%200%2C1%20-4%2C-4%20z%22%2F%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(8%2C%208)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22222.13333129882812%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%22111.06666564941406%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Ewhen%C2%A0serial%C2%A0data%C2%A0is%C2%A0available%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "when serial data is available",
+      "args": [],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"when serial data is available\" argumentids=\"[]\" argumentnames=\"[]\" argumentdefaults=\"[]\" warp=\"false\"></mutation></xml>",
+      "type": "hat"
+    },
+    {
+      "opcode": "read",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"78.03515625\" height=\"40\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%222Hx%60%2FN6ZT(%3A*QR5c5%3ABE%22%20class%3D%22blocklyDraggable%20blocklySelected%22%20data-shapes%3D%22reporter%20round%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2020%2C0%20H%2058.03333282470703%20a%2020%2020%200%200%201%200%2040%20H%2020%20a%2020%2020%200%200%201%200%20-40%20z%22%2F%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(12%2C%204)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2254.03333282470703%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%2227.016666412353516%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Eread%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "read",
+      "args": [],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"read\" argumentids=\"[]\" argumentnames=\"[]\" argumentdefaults=\"[]\" warp=\"false\"></mutation></xml>",
+      "type": "output"
+    },
+    {
+      "opcode": "readUntil",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"172.984375\" height=\"40\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%225l%40zj*TDU!NGST*(mkV%23%22%20class%3D%22blocklyDraggable%20blocklySelected%22%20data-shapes%3D%22reporter%20round%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2020%2C0%20H%20152.98333740234375%20a%2020%2020%200%200%201%200%2040%20H%2020%20a%2020%2020%200%200%201%200%20-40%20z%22%2F%3E%3Cg%20data-id%3D%22mf)v!%3B2%24ZQpoF%25%60%3F%60RPB%22%20data-argument-type%3D%22text%22%20data-shapes%3D%22argument%20round%22%20transform%3D%22translate(107.83333587646484%2C4)%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FFFFFF%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2016%2C0%20H%2045.150001525878906%20a%2016%2016%200%200%201%200%2032%20H%2016%20a%2016%2016%200%200%201%200%20-32%20z%22%2F%3E%3Cg%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(8%2C%200)%20%22%3E%3Ctext%20class%3D%22blocklyText%22%20x%3D%2222.575000762939453%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Etoken%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(12%2C%204)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2287.83333587646484%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%2243.91666793823242%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Eread%C2%A0until%3C%2Ftext%3E%3C%2Fg%3E%3Cpath%20class%3D%22blocklyPath%22%20style%3D%22visibility%3A%20hidden%22%20d%3D%22%22%20fill%3D%22%23FF3355%22%2F%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "read until %1",
+      "args": [
+        {
+          "argType": "STRING",
+          "placeholder": "token",
+          "shadowType": "text",
+          "fieldType": "TEXT",
+          "json": {
+            "type": "input_value",
+            "name": "token"
+          }
+        }
+      ],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"read until %s\" argumentids=\"[&quot;yDFU[WS~/m%$HwnJ[@:0&quot;]\" argumentnames=\"[&quot;token&quot;]\" argumentdefaults=\"[&quot;&quot;]\" warp=\"false\"></mutation></xml>",
+      "type": "output"
+    },
+    {
+      "opcode": "readAll",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"98.484375\" height=\"40\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%22%2518swi%3Aa(7%3Fy2r%2FHH2pd%22%20class%3D%22blocklyDraggable%20blocklySelected%22%20data-shapes%3D%22reporter%20round%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2020%2C0%20H%2078.48333358764648%20a%2020%2020%200%200%201%200%2040%20H%2020%20a%2020%2020%200%200%201%200%20-40%20z%22%2F%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(12%2C%204)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2274.48333358764648%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%2237.24166679382324%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Eread%C2%A0all%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "read all",
+      "args": [],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"read all\" argumentids=\"[]\" argumentnames=\"[]\" argumentdefaults=\"[]\" warp=\"false\"></mutation></xml>",
+      "type": "output"
+    },
+    {
+      "opcode": "isConnected",
+      "svg": "<svg id=\"src\" xmlns=\"http://www.w3.org/2000/svg\" width=\"151.8515625\" height=\"40\" >\n    %3Cg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-id%3D%22a5fF9X%24%2FpJ(etW%2C!%3D%23ul%22%20class%3D%22blocklyDraggable%20blocklySelected%22%20data-shapes%3D%22reporter%20boolean%22%3E%3Cpath%20class%3D%22blocklyPath%20blocklyBlockBackground%22%20stroke%3D%22%23FF3355%22%20fill%3D%22%23FF6680%22%20fill-opacity%3D%221%22%20d%3D%22m%200%2C0%20m%2020%2C0%20H%20131.8499984741211%20l%2020%2020%20l%20-20%2020%20H%2020%20l%20-20%20-20%20l%2020%20-20%20z%22%2F%3E%3Cg%20data-argument-type%3D%22text%22%20class%3D%22blocklyEditableText%22%20style%3D%22cursor%3A%20text%3B%22%20transform%3D%22translate(20%2C%204)%20%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22111.8499984741211%22%20height%3D%2232%22%20fill%3D%22%23FF3355%22%2F%3E%3Ctext%20class%3D%22blocklyText%20blocklyEditableLabel%22%20x%3D%2255.92499923706055%22%20y%3D%2218%22%20dominant-baseline%3D%22middle%22%20dy%3D%220%22%20text-anchor%3D%22middle%22%3Eis%C2%A0connected%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E\n    </svg>",
+      "msg": "is connected",
+      "args": [],
+      "mutationText": "<xml><mutation xmlns=\"http://www.w3.org/1999/xhtml\" generateshadows=\"true\" proccode=\"is connected\" argumentids=\"[]\" argumentnames=\"[]\" argumentdefaults=\"[]\" warp=\"false\"></mutation></xml>",
+      "type": "bool"
+    }
+  ],
+  "menus": [],
+  "addBlockType": "bool",
+  "showMutation": false,
+  "blockScript": null,
+  "genOption": [],
+  "genHeadScript": null,
+  "blockGenerator": null,
+  "isShowCodePreview": false
+}
